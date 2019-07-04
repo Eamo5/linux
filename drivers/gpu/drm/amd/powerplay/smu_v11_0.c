@@ -972,7 +972,7 @@ static int smu_v11_0_set_power_limit(struct smu_context *smu, uint32_t n)
 static int smu_v11_0_get_current_clk_freq(struct smu_context *smu, uint32_t clk_id, uint32_t *value)
 {
 	int ret = 0;
-	uint32_t freq;
+	uint32_t freq = 0;
 
 	if (clk_id >= PPCLK_COUNT || !value)
 		return -EINVAL;
