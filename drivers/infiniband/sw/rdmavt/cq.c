@@ -228,8 +228,6 @@ struct ib_cq *rvt_create_cq(struct ib_device *ibdev,
 	 * See rvt_mmap() for details.
 	 */
 	if (udata && udata->outlen >= sizeof(__u64)) {
-		int err;
-
 		cq->ip = rvt_create_mmap_info(rdi, sz, udata, wc);
 		if (!cq->ip) {
 			ret = ERR_PTR(-ENOMEM);
