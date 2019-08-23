@@ -502,14 +502,14 @@ config OPTIMIZE_SPECIFICALLY
 
 choice
 	prompt "Specify CPU"
-	default OPTIMIZE_FOR_8565U
+	default OPTIMIZE_FOR_9750H
 	depends on OPTIMIZE_SPECIFICALLY
 	help
 	  Specify CPU for CONFIG_OPTIMIZE_SPECIFICALLY.
 	  Invalid, unsupported CPU will break the build.
 
-	config OPTIMIZE_FOR_8565U
-		bool "Intel Core i7-8565U (Skylake)"
+	config OPTIMIZE_FOR_9750H
+		bool "Intel Core i7-9750H (Skylake)"
 
 	config OPTIMIZE_FOR_4690K
 		bool "Intel Core i5-4690K (Haswell)"
